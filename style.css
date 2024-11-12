@@ -45,14 +45,17 @@ header{
     gap: 10px;
 }
 .login-btn button{
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     font-size: 12px;
     font-weight: 600;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid rgb(177, 173, 173);
+    border-bottom: 5px solid rgb(149, 150, 147);
+    
 }
 
 .login-btn .signup{
+    padding: 0.5rem;
     background-color: white;
     border-top: 2px solid #cbd5e1; 
     border-left: 2px solid #cbd5e1; 
@@ -62,13 +65,27 @@ header{
     transition: all 150ms;
     font-weight: 600;
     text-align: center;
-    border-radius: 0.5rem; 
-    padding: 0.375rem 0.625rem; 
+
     display: inline-flex;
     align-items: center; 
     justify-content: center; 
     user-select: none;
     outline: none; 
+    border-bottom: 5px solid rgb(130, 190, 9);
+    background-color: rgb(16, 201, 16);
+    color: white;
+}
+.login{
+    padding: 0.5rem;
+}
+.login-setting{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+}
+.login-btn .login-setting img{
+     width: 1rem;
 }
 
 /* _______Nave Bars________ */
@@ -145,8 +162,6 @@ header{
 }
 .portfolio img{
     object-fit: contain;
-    background-color: gold;
-    border-radius: 50%;
 }
 .actions div{
     height: 60%;
@@ -160,9 +175,10 @@ header{
     overflow: hidden;
 }
 .searchI{
-    width: 2rem;
+    width: 1rem;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    margin-left: 10px;
 }
 .openBig{
     border-radius: 10px;
@@ -176,7 +192,9 @@ header{
 main{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 7rem;
 }
 .market-overview{
@@ -207,9 +225,9 @@ main{
 
 /* -------------highlight section-------------- */
 .highlight-sections{
-     display: flex;
-     flex-direction: row;
-     
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 0.5rem;
 }
 .market-data{
     width: 100%;
@@ -221,6 +239,9 @@ main{
     border-radius: 20px;
     margin: 4px;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .market-cap h2{
@@ -251,7 +272,10 @@ main{
     text-align: justify;
 }
 .trading-volume{
+    display: flex;
+    flex-direction: row;
     border: 1px solid gray;
+    justify-content: space-between;
     border-radius: 20px;
     margin: 4px;
     padding: 1rem;
@@ -300,17 +324,149 @@ main{
     align-items: center;
    
 }
+.first-span span{
+    margin-left: 6px;
+}
 .trending-assests p{
     color: #332f2f;
     font-weight: 600;
 }
+.trending-assests .increase img{
+    width: 0.5rem;
+    color: green;
+}
+.trending-assests .increase{
+    margin-left: 0.3rem;
+    color: green;
+}
 .first-span span{
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .trending-assests img{
     width: 1.3rem;
 }
 
+/* ____________ crypto table___________________ */
+.crypto-table{
+    width: 90%;
+    margin-top: 30px;
+    height: 4rem;
+    
+}
+.crypto-table-container{
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(173, 167, 167);
+}
+.table-controls{
+     width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+   
+    
+}
+.table-controls button{
+    height: 2.5rem;
+    padding: 4px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: rgb(109, 107, 107);
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+}
+.crypto-table-customize{
+    height: 2.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+}
+.crypto-table-container button{   
+    height: 100%;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 700;
+    border: none;
+}
+.table-controls button img{
+    width: 0.7rem;
+}
+
+/* __________ table head_________________ */
+table{
+    width: 100%;
+    height: 4rem;
+    border-collapse: collapse;
+}
+.table-head{
+    width: 100%;
+    height: 3rem;
+    border-bottom: 1px solid rgb(214, 210, 210);
+}
+
+.table-head th{
+    text-align: end;
+}
+.table-body tr{
+    text-align: end;
+    height: 4rem;
+}
+.table-body .num{
+    text-align: start;
+}
+.table-head .coin{
+    text-align: start;
+}
+.table-head .arrow-up img{
+    width: 0.6rem;
+}
+.table-head .arrow-up{
+    text-align: start;
+}
+.star img{
+    width: 1rem;
+}
+.star{
+    text-align: start;
+}
+.table-body tr td{
+   border-bottom: 1px solid rgb(232, 229, 229);
+}
+.table-body .coin{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.coin-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3px;
+}
+.coin button{
+    border: 1px solid greenyellow;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(108, 177, 6);
+
+}
+.table-body .coin img{
+    width: 1.5rem;
+}
 
 
 

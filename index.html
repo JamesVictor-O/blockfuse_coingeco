@@ -30,6 +30,9 @@
 
           <!-- seting and login -->
           <div class="login-btn">
+            <button class="login-setting">
+              <img src="/assets/settings.png" alt="">
+            </button>
             <button class="login">Login</button>
             <button class="signup">Sign Up</button>
           </div>
@@ -59,10 +62,10 @@
               <img src="/assets//bottle.svg" class="bottle" alt="">
               Candy</a>
             <a href="#" class="portfolio">
-              <img src="/assets/star.svg" class="bottle" alt="">
+              <img src="/assets/star.png" class="bottle" alt="">
               Portfolio</a>
             <div id="headerSearch">
-              <img src="/assets/searchIcon.svg" class="searchI" alt="">
+              <img src="/assets/search.png" class="searchI" alt="">
               <span>Search</span>
               <img class="openBig" src="assets/slashIcon.svg" alt="">
             </div>
@@ -95,14 +98,22 @@
         <div class="highlight-sections">
           <div class="market-data">
             <div class="market-cap">
-              <h2>$2,707,762,549,909</h2>
-              <p>Market Cap <span class="decrease">0.1%</span></p>
+              <div>
+                <h2>$2,707,762,549,909</h2>
+               <p>Market Cap <span class="decrease">0.1%</span></p>
+              </div>
+              <img src="https://www.coingecko.com/total_market_cap.svg" alt="">
             </div>
             <div class="trading-volume">
-              <h2>$163,802,333,265</h2>
-              <p>24h Trading Volume</p>
+              <div>
+                <h2>$163,802,333,265</h2>
+                <p>24h Trading Volume</p>
+              </div>
+              <img src="https://www.coingecko.com/total_volume.svg" alt="">
             </div>
+            
           </div>
+
           <div class="trending">
              <div class="trending-header">
               <h3>🔥 Trending</h3>
@@ -116,7 +127,9 @@
                   
                 </span>
                 
-               <p> $1.98 <span class="increase">282.0%</span></p>
+               <p> $1.98 <span class="increase">
+                <img src="/assets/arrow-up.png" alt="">
+                282.0%</span></p>
               </div>
 
                <!-- second asset -->
@@ -127,7 +140,9 @@
                   
                 </span>
                 
-                <p> $0.06452 <span class="increase">56.6%</span></p>
+                <p> $0.06452 <span class="increase">
+                  <img src="/assets/arrow-up.png" alt="">
+                  56.6%</span></p>
               </div>
 
               <div class="trending-assests">
@@ -136,18 +151,188 @@
                   <span> Grass</span>
                 </span>
                 
-                <p> $3.20 <span class="increase">3.7%</span></p>
+                <p> $3.20 <span class="increase">
+                  <img src="/assets/arrow-up.png" alt="">
+                  3.7%
+                </span></p>
               </div>
           </div>
-          <div class="gainers">
-            <h3>🚀 Largest Gainers</h3>
-            <ul>
-              <li>Drift Protocol - $1.98 <span class="increase">282.0%</span></li>
-              <li>Goldcoin - $0.059 <span class="increase">129.9%</span></li>
-              <li>HairDAO - $111.26 <span class="increase">126.7%</span></li>
-            </ul>
-          </div>
-        </div>
+
+          <!-- Leading -->
+          <div class="trending">
+            <div class="trending-header">
+             <h3>🚀 Largest Gainers</h3>
+             <button>View more ></button>
+            </div>
+            <!--first asset  -->
+             <div class="trending-assests">
+               <span class="first-span">
+                 <img src="/assets/coinP1.jpg" alt="">
+                 <span>Drift Protocol </span>
+                 
+               </span>
+               
+              <p> $1.98 <span class="increase">
+               <img src="/assets/arrow-up.png" alt="">
+               282.0%</span></p>
+             </div>
+
+              <!-- second asset -->
+             <div class="trending-assests">
+               <span class="first-span">
+                 <img src="/assets/coinP2.jpg" alt="">
+                 <span>HairDAO</span>
+               </span>
+               
+               <p> $0.06452 <span class="increase">
+                 <img src="/assets/arrow-up.png" alt="">
+                 56.6%</span></p>
+             </div>
+
+             <div class="trending-assests">
+               <span class="first-span">
+                 <img src="/assets/coinP3.jpg" alt="">
+                 <span>Goldcoin </span>
+               </span>
+               
+               <p> $3.20 <span class="increase">
+                 <img src="/assets/arrow-up.png" alt="">
+                 3.7%
+               </span></p>
+             </div>
+         </div>
+      </section>
+
+
+      <!-- Cryptocurrency Table -->
+      <section class="crypto-table">
+      
+      <div class="crypto-table-container">
+          <!-- sections A -->
+        <div class="table-controls">
+          <button class="active">
+            <img src="assets/all.png" alt="">
+            All</button>
+          <button>Highlights</button>
+          <button>Pump.fun Ecosystem</button>
+          <button>Categories</button>
+          <button>🔥 Elon Musk-Inspired</button>
+          <button>🔥 Dog-Themed</button>
+          <button>🔥 Prediction Markets</button>
+      </div>
+
+      <!-- section B -->
+         <div class="crypto-table-customize">
+          <button>Customize</button>
+         </div>
+      </div>
+      <table>
+        <thead class="table-head">
+          <tr>
+            <th>
+             
+            </th>
+            <th class="arrow-up">
+              <img src="/assets/arrow-up.png" alt="">
+              #</th>
+            <th class="coin">Coin</th>
+            <th>Price</th>
+            <th>1h</th>
+            <th>24h</th>
+            <th>7d</th>
+            <th>24h Volume</th>
+            <th>Market Cap</th>
+            <th>Last 7 Days</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+          <tr>
+            <td class="star"> 
+              <img src="/assets/star.png" alt="">
+            </td>
+            <td class="num">1</td>
+            <td class="coin">
+              <div class="coin-details">
+                <img src="/assets/coin1.jpg" alt="">
+                <span>Bitcoin BTCccc</span>
+                <span>Eth</span>
+              </div>
+              <button>Buy</button>
+            </td>
+            <td>$76,353.20</td>
+            <td class="increase">0.1%</td>
+            <td class="increase">0.6%</td>
+            <td class="increase">9.6%</td>
+            <td>$56,606,044,702</td>
+            <td>$1,510,243,698,218</td>
+            <td><img src="chart.png" alt="Bitcoin 7d chart"></td>
+          </tr>
+          <tr>
+            <td class="star"> 
+              <img src="/assets/star.png" alt="">
+            </td>
+            <td class="num">1</td>
+            <td class="coin">
+              <div class="coin-details">
+                <img src="/assets/coin1.jpg" alt="">
+                <span>Bitcoin BTCccc</span>
+                <span>Eth</span>
+              </div>
+              <button>Buy</button>
+            </td>
+            <td>$76,353.20</td>
+            <td class="increase">0.1%</td>
+            <td class="increase">0.6%</td>
+            <td class="increase">9.6%</td>
+            <td>$56,606,044,702</td>
+            <td>$1,510,243,698,218</td>
+            <td><img src="chart.png" alt="Bitcoin 7d chart"></td>
+          </tr>
+          <tr>
+            <td class="star"> 
+              <img src="/assets/star.png" alt="">
+            </td>
+            <td class="num">1</td>
+            <td class="coin">
+              <div class="coin-details">
+                <img src="/assets/coin1.jpg" alt="">
+                <span>Bitcoin BTCccc</span>
+                <span>Eth</span>
+              </div>
+              <button>Buy</button>
+            </td>
+            <td>$76,353.20</td>
+            <td class="increase">0.1%</td>
+            <td class="increase">0.6%</td>
+            <td class="increase">9.6%</td>
+            <td>$56,606,044,702</td>
+            <td>$1,510,243,698,218</td>
+            <td><img src="chart.png" alt="Bitcoin 7d chart"></td>
+          </tr>
+          <tr>
+            <td class="star"> 
+              <img src="/assets/star.png" alt="">
+            </td>
+            <td class="num">1</td>
+            <td class="coin">
+              <div class="coin-details">
+                <img src="/assets/coin1.jpg" alt="">
+                <span>Bitcoin BTCccc</span>
+                <span>Eth</span>
+              </div>
+              <button>Buy</button>
+            </td>
+            <td>$76,353.20</td>
+            <td class="increase">0.1%</td>
+            <td class="increase">0.6%</td>
+            <td class="increase">9.6%</td>
+            <td>$56,606,044,702</td>
+            <td>$1,510,243,698,218</td>
+            <td><img src="chart.png" alt="Bitcoin 7d chart"></td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
       </section>
      </main>
   </body>
